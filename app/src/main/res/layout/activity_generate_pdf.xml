@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/sharedtitle"/>
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="62dp">
+
+        <EditText
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Item Name"
+            android:ems="10"
+            android:textSize="25sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:ems="10"
+            android:textSize="25sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/itemQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:ems="10"
+            android:textSize="25sp"
+            android:layout_marginBottom="4dp"/>
+
+        <Button
+            android:id="@+id/addItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add item"
+            android:backgroundTint="@color/black"
+            android:textSize="22sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/itemAdded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Added:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/form2"
+        app:layout_constraintTop_toBottomOf="@id/item"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Remark"
+            android:ems="12"
+            android:textSize="25sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Payment mode 1"
+            android:ems="12"
+            android:textSize="25sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/paymentDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Payment Detail 1"
+            android:ems="12"
+            android:textSize="25sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/payment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Payment mode 2"
+            android:ems="12"
+            android:textSize="25sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/paymentDetail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Payment Detail 2"
+            android:ems="12"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/generatePdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Pdf"
+            android:backgroundTint="@color/black"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="4dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
